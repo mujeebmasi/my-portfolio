@@ -1,5 +1,6 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
+import type { ReactNode } from "react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
  
 import { Python } from "@/components/ui/svgs/python";
@@ -15,6 +16,21 @@ import {
   RestApiLogo,
   SqlLogo,
 } from "@/components/ui/svgs/tech-stack";
+
+type HackathonLink = {
+  href: string;
+  icon: ReactNode;
+  title: string;
+};
+
+type HackathonEntry = {
+  title: string;
+  dates?: string;
+  image?: string;
+  location?: string;
+  description?: string;
+  links?: HackathonLink[];
+};
 
 export const DATA = {
   name: "Shaikh Abdul Mujeeb Masi",
@@ -105,6 +121,7 @@ export const DATA = {
         "- Completed a 4-week AI and Data Analytics internship focused on real-world sustainability datasets.\n- Performed data preprocessing, data cleaning, and exploratory data analysis workflows.",
     },
   ],
+  hackathons: [] as HackathonEntry[],
   education: [
     {
       school: "Vardhaman College of Engineering",

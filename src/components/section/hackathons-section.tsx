@@ -5,6 +5,8 @@ import { DATA } from "@/data/resume";
 import { Timeline, TimelineItem, TimelineConnectItem } from "@/components/timeline";
 
 export default function HackathonsSection() {
+  const hackathons = DATA.hackathons ?? [];
+
   return (
     <section id="hackathons" className="overflow-hidden">
       <div className="flex min-h-0 flex-col gap-y-8 w-full">
@@ -19,14 +21,16 @@ export default function HackathonsSection() {
           <div className="flex flex-col gap-y-3 items-center justify-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">I like building things</h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-              During my time in university, I attended {DATA.hackathons.length}+
-              hackathons. People from around the country would come together and
-              build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.
+              During my time in university, I spent time around hackathons and
+              collaborative build events. People from around the country would
+              come together and build incredible things in 2-3 days. It was
+              eye-opening to see the endless possibilities brought to life by a
+              group of motivated and passionate individuals.
             </p>
           </div>
         </div>
         <Timeline>
-          {DATA.hackathons.map((hackathon) => (
+          {hackathons.map((hackathon) => (
             <TimelineItem key={hackathon.title + hackathon.dates} className="w-full flex items-start justify-between gap-10">
               <TimelineConnectItem className="flex items-start justify-center">
                 {hackathon.image ? (
@@ -75,6 +79,11 @@ export default function HackathonsSection() {
             </TimelineItem>
           ))}
         </Timeline>
+        {hackathons.length === 0 && (
+          <p className="text-center text-sm text-muted-foreground">
+            Hackathon entries haven’t been added yet.
+          </p>
+        )}
       </div>
     </section>
   );
