@@ -163,6 +163,11 @@ export const DATA = {
           href: "https://github.com/mujeebmasi/Second-Brain",
           icon: <Icons.github className="size-3" />,
         },
+        {
+          type: "Website",
+          href: "https://secondbrain-mujeeb.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
       ],
       image: "",
       video: "",
