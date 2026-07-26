@@ -104,7 +104,7 @@ export const DATA = {
         url: "mailto:shaikhabdulmujeeb0415@gmail.com",
         icon: Icons.email,
 
-        navbar: true,
+        navbar: false,
       },
     },
   },
