@@ -164,6 +164,42 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "RedisRAG - AI-Powered GitHub Profile Analyzer",
+      href: "https://github.com/mujeebmasi/RedisRAG",
+      dates: "Jul. 2026",
+      active: true,
+      description:
+        "Developed a production-ready Retrieval-Augmented Generation (RAG) platform that analyzes GitHub repositories by indexing README files into Redis vector search and enabling AI-powered conversations with source-grounded responses.\n- Engineered an optimized embedding pipeline using Google Gemini REST API with SHA-based caching, batch embedding, recursive text chunking, and cosine similarity search to reduce re-indexing latency and API overhead.\n- Built scalable FastAPI APIs with PostgreSQL persistence, containerized the application using Docker, and optimized cloud deployment with background task processing and dynamic Redis index management.",
+      technologies: ["FastAPI", "Redis", "PostgreSQL", "React", "Gemini", "Docker"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/mujeebmasi/RedisRAG",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Conditional RAG Workflow using LangGraph",
+      href: "https://github.com/mujeebmasi",
+      dates: "Jun. 2026",
+      active: true,
+      description:
+        "Designed a conditional Retrieval-Augmented Generation (RAG) workflow using LangGraph that intelligently routes user queries to either direct LLM inference or document retrieval based on query intent.\n- Built a semantic retrieval pipeline by processing PDF documents into vector embeddings, indexing them with FAISS, and retrieving relevant context using LangChain for grounded response generation.\n- Developed an interactive Streamlit application integrated with Groq LLM to deliver low-latency, context-aware responses with modular workflow orchestration for extensibility.",
+      technologies: ["Python", "LangGraph", "LangChain", "FAISS", "Groq", "Streamlit"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/mujeebmasi",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "Second Brain - Content Management Platform",
       href: "https://github.com/mujeebmasi/Second-Brain",
       dates: "May 2026",
@@ -198,42 +234,6 @@ export const DATA = {
         {
           type: "GitHub",
           href: "https://github.com/mujeebmasi/multiagent-system",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "LearnEra - AI Learning Assistant",
-      href: "https://github.com/mujeebmasi",
-      dates: "Sep. 2025 - Oct. 2025",
-      active: true,
-      description:
-        "Developed an AI assistant to filter and deliver relevant learning resources. Built LLM-based content extraction and ranking workflows, designed prompt pipelines for focused and structured outputs, and worked with API-driven LLM systems and response optimization.",
-      technologies: ["LLMs", "APIs", "Prompt Engineering"],
-      links: [
-        {
-          type: "GitHub",
-          href: "https://github.com/mujeebmasi",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Hybrid WOA-PSO Feature Optimization for Malware Classification",
-      href: "https://github.com/mujeebmasi/advanced-whale-optimization-algorithm",
-      dates: "Dec. 2025 - Apr. 2026",
-      active: true,
-      description:
-        "Developing a malware detection pipeline using Hybrid Whale Optimization plus PSO. The project focuses on optimizing feature selection, improving classification performance, and applying explainability techniques for model transparency.",
-      technologies: ["Machine Learning", "Optimization", "Explainability", "Python"],
-      links: [
-        {
-          type: "GitHub",
-          href: "https://github.com/mujeebmasi/advanced-whale-optimization-algorithm",
           icon: <Icons.github className="size-3" />,
         },
       ],
