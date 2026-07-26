@@ -106,3 +106,98 @@ export function GitLogo(props: React.SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
+
+export function TypeScriptLogo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>TypeScript</title>
+      <rect width="24" height="24" rx="5" fill="#3178C6" />
+      <path fill="#ffffff" d="M13.5 18.5v-2.2c.4.2.9.4 1.5.5.6.1 1.2.2 1.8.2.6 0 1.1-.1 1.4-.3.3-.2.5-.5.5-.9 0-.3-.1-.6-.4-.8-.3-.2-.8-.4-1.5-.7l-.8-.3c-.9-.4-1.5-.8-1.9-1.2-.4-.4-.6-1-.6-1.7 0-.7.3-1.4.8-1.9.5-.5 1.3-.9 2.3-1.1.9-.2 1.8-.2 2.7 0 .8.2 1.5.4 2.1.8v2.2c-.5-.3-1.1-.5-1.6-.7-.5-.2-1-.3-1.6-.3-.6 0-1.1.1-1.4.3-.3.2-.4.4-.4.8 0 .3.1.6.4.8.3.2.8.4 1.4.6l.8.3c1 .4 1.7.9 2.1 1.4.4.5.6 1.1.6 1.9 0 .8-.3 1.5-.9 2.1-.6.6-1.4 1-2.4 1.2-1 .2-2.1.2-3.1 0-.9-.2-1.7-.5-2.3-.9zm-7-1.3H9v-9H4.5V6h9v2.2H9v9z" />
+    </svg>
+  );
+}
+
+export function LangGraphLogo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>LangGraph</title>
+      <rect width="24" height="24" rx="5" fill="#1E293B" />
+      <circle cx="7" cy="12" r="2.5" fill="#38BDF8" />
+      <circle cx="17" cy="7" r="2.5" fill="#38BDF8" />
+      <circle cx="17" cy="17" r="2.5" fill="#38BDF8" />
+      <path d="M9.2 11.1l5.6-3.2M9.2 12.9l5.6 3.2" stroke="#38BDF8" strokeWidth="1.5" />
+    </svg>
+  );
+}
+
+export function RedisLogo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>Redis</title>
+      <rect width="24" height="24" rx="5" fill="#DC2626" />
+      <path fill="#ffffff" d="M6 8.5l6-3 6 3-6 3-6-3zm0 3.5l6 3 6-3v2l-6 3-6-3v-2zm0 3.5l6 3 6-3v2l-6 3-6-3v-2z" />
+    </svg>
+  );
+}
+
+export function RagLogo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>RAG</title>
+      <rect width="24" height="24" rx="5" fill="#6366F1" />
+      <path fill="#ffffff" d="M7 6h10v2H7zm0 4h10v2H7zm0 4h7v2H7z" />
+      <circle cx="17" cy="16" r="2" fill="#38BDF8" />
+    </svg>
+  );
+}
+
+export function LlmLogo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>LLMs</title>
+      <rect width="24" height="24" rx="5" fill="#8B5CF6" />
+      <path fill="#ffffff" d="M12 5l1.8 3.8 4.2.6-3 3 .7 4.2-3.7-2-3.7 2 .7-4.2-3-3 4.2-.6z" />
+    </svg>
+  );
+}
+
+export function VercelLogo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>Vercel</title>
+      <rect width="24" height="24" rx="5" fill="#000000" />
+      <path fill="#ffffff" d="M12 5l7 12H5z" />
+    </svg>
+  );
+}
+
+export function RenderLogo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>Render</title>
+      <rect width="24" height="24" rx="5" fill="#46E3B7" />
+      <path fill="#000000" d="M7 6h4v12H7zm6 0h4v6h-4z" />
+    </svg>
+  );
+}
+
+export function FaissLogo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>FAISS</title>
+      <rect width="24" height="24" rx="5" fill="#2563EB" />
+      <path fill="#ffffff" d="M7 6h10v2.5H9.5V11H16v2.5H9.5V18H7z" />
+    </svg>
+  );
+}
+
+export function ChromaDbLogo(props: React.SVGProps<SVGSVGElement>) {
+  return (
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <title>ChromaDB</title>
+      <rect width="24" height="24" rx="5" fill="#F59E0B" />
+      <circle cx="12" cy="12" r="5" fill="#ffffff" />
+      <circle cx="12" cy="12" r="2.5" fill="#F59E0B" />
+    </svg>
+  );
+}

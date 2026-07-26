@@ -5,16 +5,24 @@ import { ReactLight } from "@/components/ui/svgs/reactLight";
  
 import { Python } from "@/components/ui/svgs/python";
 import {
+  ChromaDbLogo,
+  FaissLogo,
   FastApiLogo,
   GitLogo,
   JavaScriptLogo,
+  LangGraphLogo,
+  LlmLogo,
   MachineLearningLogo,
   MongoDbLogo,
   NlpLogo,
   PandasLogo,
   PyTorchLogo,
-  RestApiLogo,
+  RagLogo,
+  RedisLogo,
+  RenderLogo,
   SqlLogo,
+  TypeScriptLogo,
+  VercelLogo,
 } from "@/components/ui/svgs/tech-stack";
 
 type HackathonLink = {
@@ -50,15 +58,22 @@ export const DATA = {
   ],
   skills: [
     { name: "React", icon: ReactLight },
-    
     { name: "Python", icon: Python },
     { name: "JavaScript", icon: JavaScriptLogo },
+    { name: "TypeScript", icon: TypeScriptLogo },
     { name: "FastAPI", icon: FastApiLogo },
-    { name: "REST APIs", icon: RestApiLogo },
     { name: "SQL", icon: SqlLogo },
     { name: "MongoDB", icon: MongoDbLogo },
+    { name: "Redis", icon: RedisLogo },
     { name: "Machine Learning", icon: MachineLearningLogo },
     { name: "LangChain", icon: NlpLogo },
+    { name: "LangGraph", icon: LangGraphLogo },
+    { name: "RAG", icon: RagLogo },
+    { name: "LLMs", icon: LlmLogo },
+    { name: "FAISS", icon: FaissLogo },
+    { name: "ChromaDB", icon: ChromaDbLogo },
+    { name: "Vercel", icon: VercelLogo },
+    { name: "Render", icon: RenderLogo },
     { name: "Pandas", icon: PandasLogo },
     { name: "PyTorch", icon: PyTorchLogo },
     { name: "Git", icon: GitLogo },
