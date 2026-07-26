@@ -165,13 +165,18 @@ export const DATA = {
   projects: [
     {
       title: "RedisRAG - AI-Powered GitHub Profile Analyzer",
-      href: "https://github.com/mujeebmasi/RedisRAG",
+      href: "https://redis-rag.vercel.app/",
       dates: "Jul. 2026",
       active: true,
       description:
         "Developed a production-ready Retrieval-Augmented Generation (RAG) platform that analyzes GitHub repositories by indexing README files into Redis vector search and enabling AI-powered conversations with source-grounded responses. Engineered an optimized embedding pipeline using Google Gemini REST API with SHA-based caching, batch embedding, recursive text chunking, and cosine similarity search to reduce re-indexing latency and API overhead. Built scalable FastAPI APIs with PostgreSQL persistence, containerized the application using Docker, and optimized cloud deployment with background task processing and dynamic Redis index management.",
       technologies: ["FastAPI", "Redis", "PostgreSQL", "React", "Gemini", "Docker"],
       links: [
+        {
+          type: "Website",
+          href: "https://redis-rag.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
         {
           type: "GitHub",
           href: "https://github.com/mujeebmasi/RedisRAG",
@@ -183,13 +188,18 @@ export const DATA = {
     },
     {
       title: "Conditional RAG Workflow using LangGraph",
-      href: "https://github.com/mujeebmasi",
+      href: "https://rag-based-langgraph-assistant.streamlit.app/",
       dates: "Jun. 2026",
       active: true,
       description:
         "Designed a conditional Retrieval-Augmented Generation (RAG) workflow using LangGraph that intelligently routes user queries to either direct LLM inference or document retrieval based on query intent. Built a semantic retrieval pipeline by processing PDF documents into vector embeddings, indexing them with FAISS, and retrieving relevant context using LangChain for grounded response generation. Developed an interactive Streamlit application integrated with Groq LLM to deliver low-latency, context-aware responses with modular workflow orchestration for extensibility.",
       technologies: ["Python", "LangGraph", "LangChain", "FAISS", "Groq", "Streamlit"],
       links: [
+        {
+          type: "Website",
+          href: "https://rag-based-langgraph-assistant.streamlit.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
         {
           type: "GitHub",
           href: "https://github.com/mujeebmasi",
@@ -201,7 +211,7 @@ export const DATA = {
     },
     {
       title: "Second Brain - Content Management Platform",
-      href: "https://github.com/mujeebmasi/Second-Brain",
+      href: "https://secondbrain-mujeeb.vercel.app/",
       dates: "May 2026",
       active: true,
       description:
@@ -209,14 +219,14 @@ export const DATA = {
       technologies: ["React", "FastAPI", "MongoDB", "Vercel", "Render"],
       links: [
         {
-          type: "GitHub",
-          href: "https://github.com/mujeebmasi/Second-Brain",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
           type: "Website",
           href: "https://secondbrain-mujeeb.vercel.app/",
           icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "GitHub",
+          href: "https://github.com/mujeebmasi/Second-Brain",
+          icon: <Icons.github className="size-3" />,
         },
       ],
       image: "",

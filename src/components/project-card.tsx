@@ -139,6 +139,27 @@ export function ProjectCard({
             ))}
           </div>
         )}
+        {links && links.length > 0 && (
+          <div className="flex flex-wrap gap-2 pt-1">
+            {links.map((link, idx) => (
+              <Link
+                href={link.href}
+                key={idx}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Badge
+                  className="flex items-center gap-1.5 text-xs bg-muted text-foreground hover:bg-accent border border-border transition-colors px-2.5 py-1"
+                  variant="outline"
+                >
+                  {link.icon}
+                  {link.type}
+                </Badge>
+              </Link>
+            ))}
+          </div>
+        )}
       </div>
     </div>
   );
