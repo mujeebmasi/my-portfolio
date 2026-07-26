@@ -120,7 +120,7 @@ export const DATA = {
       start: "Sep. 2025",
       end: "Apr. 2026",
       description:
-        "- Led initiatives on Salesforce Agentforce and enterprise AI workflows.\n- Organized and conducted a hackathon with 300+ participants.\n- Mentored 1000+ students in building automation workflows using Salesforce.",
+        "Led initiatives on Salesforce Agentforce and enterprise AI workflows. Organized and conducted a hackathon with 300+ participants. Mentored 1000+ students in building automation workflows using Salesforce.",
     },
     {
       company: "Skills4Future",
@@ -132,7 +132,7 @@ export const DATA = {
       start: "Aug. 2025",
       end: "Sep. 2025",
       description:
-        "- Completed a 4-week AI and Data Analytics internship focused on real-world sustainability datasets.\n- Performed data preprocessing, data cleaning, and exploratory data analysis workflows.",
+        "Completed a 4-week AI and Data Analytics internship focused on real-world sustainability datasets. Performed data preprocessing, data cleaning, and exploratory data analysis workflows.",
     },
   ],
   hackathons: [] as HackathonEntry[],
@@ -169,7 +169,7 @@ export const DATA = {
       dates: "Jul. 2026",
       active: true,
       description:
-        "Developed a production-ready Retrieval-Augmented Generation (RAG) platform that analyzes GitHub repositories by indexing README files into Redis vector search and enabling AI-powered conversations with source-grounded responses.\n- Engineered an optimized embedding pipeline using Google Gemini REST API with SHA-based caching, batch embedding, recursive text chunking, and cosine similarity search to reduce re-indexing latency and API overhead.\n- Built scalable FastAPI APIs with PostgreSQL persistence, containerized the application using Docker, and optimized cloud deployment with background task processing and dynamic Redis index management.",
+        "Developed a production-ready Retrieval-Augmented Generation (RAG) platform that analyzes GitHub repositories by indexing README files into Redis vector search and enabling AI-powered conversations with source-grounded responses. Engineered an optimized embedding pipeline using Google Gemini REST API with SHA-based caching, batch embedding, recursive text chunking, and cosine similarity search to reduce re-indexing latency and API overhead. Built scalable FastAPI APIs with PostgreSQL persistence, containerized the application using Docker, and optimized cloud deployment with background task processing and dynamic Redis index management.",
       technologies: ["FastAPI", "Redis", "PostgreSQL", "React", "Gemini", "Docker"],
       links: [
         {
@@ -187,7 +187,7 @@ export const DATA = {
       dates: "Jun. 2026",
       active: true,
       description:
-        "Designed a conditional Retrieval-Augmented Generation (RAG) workflow using LangGraph that intelligently routes user queries to either direct LLM inference or document retrieval based on query intent.\n- Built a semantic retrieval pipeline by processing PDF documents into vector embeddings, indexing them with FAISS, and retrieving relevant context using LangChain for grounded response generation.\n- Developed an interactive Streamlit application integrated with Groq LLM to deliver low-latency, context-aware responses with modular workflow orchestration for extensibility.",
+        "Designed a conditional Retrieval-Augmented Generation (RAG) workflow using LangGraph that intelligently routes user queries to either direct LLM inference or document retrieval based on query intent. Built a semantic retrieval pipeline by processing PDF documents into vector embeddings, indexing them with FAISS, and retrieving relevant context using LangChain for grounded response generation. Developed an interactive Streamlit application integrated with Groq LLM to deliver low-latency, context-aware responses with modular workflow orchestration for extensibility.",
       technologies: ["Python", "LangGraph", "LangChain", "FAISS", "Groq", "Streamlit"],
       links: [
         {
