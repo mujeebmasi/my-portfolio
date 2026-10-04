@@ -50,14 +50,14 @@ export const DATA = {
   location: "Hyderabad, Telangana, India",
   locationLink: "https://www.google.com/maps/place/Hyderabad",
   description:
-    "Skilled in FastAPI, Python, React, LangChain, and LLM-based applications.",
+    "Full-stack and AI engineer building with TypeScript, Next.js, Python, and LLM-based applications.",
   summary:
-    "Experienced in building backend APIs and AI-powered projects, with interests in backend engineering, Generative AI, and scalable systems.",
+    "B.Tech student (AI & ML) who builds full-stack products and AI systems, from RAG pipelines and live speech translation to evaluation tools for voice agents. Currently a contract AI engineer, with interests in backend engineering, Generative AI, and scalable systems.",
   avatarUrl: "/me.png.png",
   highlights: [
-    "Backend APIs with FastAPI and Python",
-    "RAG pipelines and LangChain-powered retrieval applications",
-    "LLM-based applications and automation",
+    "Full-stack apps with Next.js, TypeScript and FastAPI",
+    "RAG pipelines with LangChain, LangGraph and vector search",
+    "Evaluation and tooling for LLM and voice agents",
   ],
   skills: [
     { name: "React", icon: ReactLight },
