@@ -196,7 +196,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects-meet-translate.png",
+      image: "",
       video: "",
     },
     {
@@ -214,7 +214,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects-voice-eval.png",
+      image: "",
       video: "",
     },
     {
@@ -237,7 +237,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects-redisrag.png",
+      image: "",
       video: "",
     },
     {
@@ -260,7 +260,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projects-conditional-rag.png",
+      image: "",
       video: "",
     },
   ],
