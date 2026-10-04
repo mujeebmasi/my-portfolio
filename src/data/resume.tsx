@@ -117,6 +117,18 @@ export const DATA = {
 
   work: [
     {
+      company: "Drytis",
+      badges: [],
+      href: "",
+      location: "Remote",
+      title: "AI Computer Science Engineer (Contract)",
+      logoUrl: "",
+      start: "Aug. 2026",
+      end: "Present",
+      description:
+        "Provide live and asynchronous engineering support to clients, including pair programming, debugging, and completing application features across varied software stacks. Apply prompt engineering and AI coding tools in a cloud-based development environment to accelerate client delivery.",
+    },
+    {
       company: "Salesforce Agentforce Club",
       href: "https://www.linkedin.com/in/mujeebmasi/",
       badges: [],
