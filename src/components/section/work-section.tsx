@@ -57,7 +57,27 @@ export default function WorkSection() {
                 <LogoImage src={work.logoUrl} alt={work.company} />
                 <div className="flex-1 min-w-0 gap-0.5 flex flex-col">
                   <div className="font-semibold leading-none flex items-center gap-2">
-                    {work.company}
+                    {work.href ? (
+                      <span
+                        role="link"
+                        tabIndex={0}
+                        className="hover:underline underline-offset-4"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          window.open(work.href, "_blank", "noopener,noreferrer");
+                        }}
+                        onKeyDown={(e) => {
+                          if (e.key === "Enter") {
+                            e.stopPropagation();
+                            window.open(work.href, "_blank", "noopener,noreferrer");
+                          }
+                        }}
+                      >
+                        {work.company}
+                      </span>
+                    ) : (
+                      work.company
+                    )}
                     <span className="relative inline-flex items-center w-3.5 h-3.5">
                       <ChevronRight
                         className={cn(
