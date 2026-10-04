@@ -4,6 +4,9 @@ import type { ReactNode } from "react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
  
 import { Python } from "@/components/ui/svgs/python";
+import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
+import { Nodejs } from "@/components/ui/svgs/nodejs";
+import { Postgresql } from "@/components/ui/svgs/postgresql";
 import {
   ChromaDbLogo,
   FaissLogo,
@@ -61,8 +64,11 @@ export const DATA = {
     { name: "Python", icon: Python },
     { name: "JavaScript", icon: JavaScriptLogo },
     { name: "TypeScript", icon: TypeScriptLogo },
+    { name: "Next.js", icon: NextjsIconDark },
+    { name: "Node.js", icon: Nodejs },
     { name: "FastAPI", icon: FastApiLogo },
     { name: "SQL", icon: SqlLogo },
+    { name: "PostgreSQL", icon: Postgresql },
     { name: "MongoDB", icon: MongoDbLogo },
     { name: "Redis", icon: RedisLogo },
     { name: "Machine Learning", icon: MachineLearningLogo },
@@ -164,6 +170,42 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "Meet Translate - Live Multilingual Meetings",
+      href: "https://github.com/mujeebmasi/meeting-translate",
+      dates: "Oct. 2026",
+      active: true,
+      description:
+        "Built a video-meeting app where participants speaking Hindi, Telugu, Tamil or Kannada are heard in English by everyone else, as live captions and a spoken English voice. Wired a speech-recognition service to a backend that translates each utterance in real time, and shows the original speech transliterated into English letters under every caption. Split the system into a frontend, a backend and a separate ASR service, and covered it with an automated test suite.",
+      technologies: ["TypeScript", "Next.js", "Python", "ASR", "WebRTC"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/mujeebmasi/meeting-translate",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
+      title: "Voice Agent Eval Harness",
+      href: "https://github.com/mujeebmasi/voice-agent-eval-harness",
+      dates: "Sep. 2026",
+      active: true,
+      description:
+        "Built an evaluation harness that runs scripted adversarial conversations against a voice or chat support agent and scores it on escalation correctness, language fidelity and interruption handling. Reports escalation precision and recall instead of a single pass rate, so an agent that escalates everything cannot look good, and flags agents that silently switch back to English or answer a stale topic after the customer changes subject.",
+      technologies: ["Python", "LLM Evaluation"],
+      links: [
+        {
+          type: "GitHub",
+          href: "https://github.com/mujeebmasi/voice-agent-eval-harness",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "",
+      video: "",
+    },
+    {
       title: "RedisRAG - AI-Powered GitHub Profile Analyzer",
       href: "https://redis-rag.vercel.app/",
       dates: "Jul. 2026",
@@ -203,47 +245,6 @@ export const DATA = {
         {
           type: "GitHub",
           href: "https://github.com/mujeebmasi",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Second Brain - Content Management Platform",
-      href: "https://secondbrain-mujeeb.vercel.app/",
-      dates: "May 2026",
-      active: true,
-      description:
-        "Built a full-stack second brain application to save, organize, and share YouTube links, tweets, and notes. Developed a FastAPI backend with JWT authentication, REST APIs, MongoDB integration, and CRUD functionality. Implemented responsive frontend using React and TypeScript with dynamic content rendering and API integration. Deployed frontend on Vercel and backend on Render with environment variable management and production configuration. Configured CORS handling, API communication, and cloud database connectivity using MongoDB Atlas.",
-      technologies: ["React", "FastAPI", "MongoDB", "Vercel", "Render"],
-      links: [
-        {
-          type: "Website",
-          href: "https://secondbrain-mujeeb.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "GitHub",
-          href: "https://github.com/mujeebmasi/Second-Brain",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "AI Multi-Agent Research System",
-      href: "https://github.com/mujeebmasi/multiagent-system",
-      dates: "May 2026",
-      active: true,
-      description:
-        "Built a multi-agent AI research pipeline using LangChain and LangGraph for automated web research workflows. Implemented agent orchestration with specialized search, scraping, writing, and critique agents. Integrated Tavily web search and custom web scraping tools using BeautifulSoup and Requests. Developed structured research report generation with critique and feedback loops for iterative refinement.",
-      technologies: ["LangChain", "FastAPI", "Streamlit"],
-      links: [
-        {
-          type: "GitHub",
-          href: "https://github.com/mujeebmasi/multiagent-system",
           icon: <Icons.github className="size-3" />,
         },
       ],
