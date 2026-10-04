@@ -214,7 +214,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects-voice-eval.png",
       video: "",
     },
     {
@@ -237,7 +237,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects-redisrag.png",
       video: "",
     },
     {
@@ -260,7 +260,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "/projects-conditional-rag.png",
       video: "",
     },
   ],
