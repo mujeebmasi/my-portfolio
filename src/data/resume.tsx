@@ -119,10 +119,10 @@ export const DATA = {
     {
       company: "Drytis",
       badges: [],
-      href: "",
+      href: "https://drytis.com/",
       location: "Remote",
       title: "AI Computer Science Engineer (Contract)",
-      logoUrl: "",
+      logoUrl: "/drytis.png",
       start: "Aug. 2026",
       end: "Present",
       description:
