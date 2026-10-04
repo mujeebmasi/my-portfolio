@@ -57,7 +57,7 @@ export default function WorkSection() {
                 <LogoImage src={work.logoUrl} alt={work.company} />
                 <div className="flex-1 min-w-0 gap-0.5 flex flex-col">
                   <div className="font-semibold leading-none flex items-center gap-2">
-                    {work.href ? (
+                    {(work.href as string) ? (
                       <span
                         role="link"
                         tabIndex={0}
