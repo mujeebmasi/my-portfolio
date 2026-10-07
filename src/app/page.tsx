@@ -82,20 +82,20 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="projects">
-        <BlurFade delay={BLUR_FADE_DELAY * 7}>
-          <ProjectsSection />
-        </BlurFade>
-      </section>
       <section id="open-source">
         <div className="flex min-h-0 flex-col gap-y-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <h2 className="text-xl font-bold">Open Source</h2>
           </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <OpenSourceSection />
           </BlurFade>
         </div>
+      </section>
+      <section id="projects">
+        <BlurFade delay={BLUR_FADE_DELAY * 8}>
+          <ProjectsSection />
+        </BlurFade>
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">
