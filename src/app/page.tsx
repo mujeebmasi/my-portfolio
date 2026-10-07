@@ -8,6 +8,7 @@ import Markdown from "react-markdown";
 import ContactSection from "@/components/section/contact-section";
 import ProjectsSection from "@/components/section/projects-section";
 import WorkSection from "@/components/section/work-section";
+import OpenSourceSection from "@/components/section/open-source-section";
 import { ArrowUpRight } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
@@ -85,6 +86,16 @@ export default function Page() {
         <BlurFade delay={BLUR_FADE_DELAY * 7}>
           <ProjectsSection />
         </BlurFade>
+      </section>
+      <section id="open-source">
+        <div className="flex min-h-0 flex-col gap-y-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+            <h2 className="text-xl font-bold">Open Source</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+            <OpenSourceSection />
+          </BlurFade>
+        </div>
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-6">

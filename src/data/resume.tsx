@@ -1,28 +1,22 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon } from "lucide-react";
-import type { ReactNode } from "react";
+import type { ReactNode, SVGProps } from "react";
 import { ReactLight } from "@/components/ui/svgs/reactLight";
  
 import { Python } from "@/components/ui/svgs/python";
 import { NextjsIconDark } from "@/components/ui/svgs/nextjsIconDark";
 import { Nodejs } from "@/components/ui/svgs/nodejs";
 import { Postgresql } from "@/components/ui/svgs/postgresql";
+import { Docker } from "@/components/ui/svgs/docker";
 import {
-  ChromaDbLogo,
-  FaissLogo,
   FastApiLogo,
   GitLogo,
   JavaScriptLogo,
-  LangGraphLogo,
   LlmLogo,
-  MachineLearningLogo,
-  MongoDbLogo,
   NlpLogo,
-  PandasLogo,
-  PyTorchLogo,
   RagLogo,
   RedisLogo,
-  RenderLogo,
+  RestApiLogo,
   SqlLogo,
   TypeScriptLogo,
   VercelLogo,
@@ -32,6 +26,20 @@ type HackathonLink = {
   href: string;
   icon: ReactNode;
   title: string;
+};
+
+// icon is optional: skills without a logo render as a plain text pill
+type Skill = {
+  name: string;
+  icon?: (props: SVGProps<SVGSVGElement>) => ReactNode;
+};
+
+type OpenSourceEntry = {
+  project: string;
+  href: string;
+  dates: string;
+  badge: string;
+  description: string;
 };
 
 type HackathonEntry = {
@@ -55,35 +63,33 @@ export const DATA = {
     "B.Tech student (AI & ML) who builds full-stack products and AI systems, from RAG pipelines and live speech translation to evaluation tools for voice agents. Currently a contract AI engineer, with interests in backend engineering, Generative AI, and scalable systems.",
   avatarUrl: "/me.png.png",
   highlights: [
-    "Full-stack apps with Next.js, TypeScript and FastAPI",
-    "RAG pipelines with LangChain, LangGraph and vector search",
-    "Evaluation and tooling for LLM and voice agents",
+    "Full-stack apps with Next.js, NestJS and FastAPI",
+    "RAG pipelines with LangChain and Redis vector search",
+    "Merged open-source PRs to Screenpipe and Supabase",
   ],
   skills: [
-    { name: "React", icon: ReactLight },
-    { name: "Python", icon: Python },
-    { name: "JavaScript", icon: JavaScriptLogo },
     { name: "TypeScript", icon: TypeScriptLogo },
+    { name: "JavaScript", icon: JavaScriptLogo },
+    { name: "Python", icon: Python },
+    { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
-    { name: "Node.js", icon: Nodejs },
+    { name: "Tailwind CSS" },
+    { name: "NestJS" },
     { name: "FastAPI", icon: FastApiLogo },
+    { name: "Socket.IO" },
+    { name: "WebRTC" },
+    { name: "REST APIs", icon: RestApiLogo },
     { name: "SQL", icon: SqlLogo },
     { name: "PostgreSQL", icon: Postgresql },
-    { name: "MongoDB", icon: MongoDbLogo },
+    { name: "Prisma" },
     { name: "Redis", icon: RedisLogo },
-    { name: "Machine Learning", icon: MachineLearningLogo },
-    { name: "LangChain", icon: NlpLogo },
-    { name: "LangGraph", icon: LangGraphLogo },
     { name: "RAG", icon: RagLogo },
+    { name: "LangChain", icon: NlpLogo },
     { name: "LLMs", icon: LlmLogo },
-    { name: "FAISS", icon: FaissLogo },
-    { name: "ChromaDB", icon: ChromaDbLogo },
-    { name: "Vercel", icon: VercelLogo },
-    { name: "Render", icon: RenderLogo },
-    { name: "Pandas", icon: PandasLogo },
-    { name: "PyTorch", icon: PyTorchLogo },
+    { name: "Docker", icon: Docker },
     { name: "Git", icon: GitLogo },
-  ],
+    { name: "Vercel", icon: VercelLogo },
+  ] as Skill[],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
   ],
@@ -126,7 +132,7 @@ export const DATA = {
       start: "Aug. 2026",
       end: "Present",
       description:
-        "Provide live and asynchronous engineering support to clients, including pair programming, debugging, and completing application features across varied software stacks. Apply prompt engineering and AI coding tools in a cloud-based development environment to accelerate client delivery.",
+        "On-demand contract engineer on a remote coding-support platform, helping clients debug and complete features.",
     },
     {
       company: "Salesforce Agentforce Club",
@@ -136,7 +142,7 @@ export const DATA = {
       title: "Core Group Member",
         logoUrl: "/salesforce.png",
       start: "Sep. 2025",
-      end: "Apr. 2026",
+      end: "Sep. 2026",
       description:
         "Led initiatives on Salesforce Agentforce and enterprise AI workflows. Organized and conducted a hackathon with 300+ participants. Mentored 1000+ students in building automation workflows using Salesforce.",
     },
@@ -153,6 +159,24 @@ export const DATA = {
         "Completed a 4-week AI and Data Analytics internship focused on real-world sustainability datasets. Performed data preprocessing, data cleaning, and exploratory data analysis workflows.",
     },
   ],
+  openSource: [
+    {
+      project: "Screenpipe",
+      href: "https://github.com/screenpipe/screenpipe/pulls?q=is%3Apr+author%3Amujeebmasi+is%3Amerged",
+      dates: "2026",
+      badge: "YC S26 · 4 merged PRs",
+      description:
+        "Fixed meeting detection in Rust: app names were matched as plain substrings, so adding the Dia browser would also have flagged NVIDIA and Windows Media Player as browsers; switched to word-boundary matching and added tests. Also fixed the dev web server resolving the wrong app root, made a CLI test build its database path portably, and documented a Windows install error.",
+    },
+    {
+      project: "Supabase SDK",
+      href: "https://github.com/supabase/sdk/pull/137",
+      dates: "Sep. 2026",
+      badge: "Merged",
+      description:
+        "Fixed the PostgREST type generator: computed fields matched by argument type instead of name, INOUT arguments counted, foreign tables included.",
+    },
+  ] as OpenSourceEntry[],
   hackathons: [] as HackathonEntry[],
   education: [
     {
@@ -188,7 +212,7 @@ export const DATA = {
       active: true,
       description:
         "Built a video-meeting app where participants speaking Hindi, Telugu, Tamil or Kannada are heard in English by everyone else, as live captions and a spoken English voice. Wired a speech-recognition service to a backend that translates each utterance in real time, and shows the original speech transliterated into English letters under every caption. Split the system into a frontend, a backend and a separate ASR service, and covered it with an automated test suite.",
-      technologies: ["TypeScript", "Next.js", "Python", "ASR", "WebRTC"],
+      technologies: ["Next.js", "NestJS", "Socket.IO", "WebRTC", "FastAPI", "PostgreSQL"],
       links: [
         {
           type: "GitHub",
@@ -206,7 +230,7 @@ export const DATA = {
       active: true,
       description:
         "Built an evaluation harness that runs scripted adversarial conversations against a voice or chat support agent and scores it on escalation correctness, language fidelity and interruption handling. Reports escalation precision and recall instead of a single pass rate, so an agent that escalates everything cannot look good, and flags agents that silently switch back to English or answer a stale topic after the customer changes subject.",
-      technologies: ["Python", "LLM Evaluation"],
+      technologies: ["Python", "FastAPI", "Pydantic", "Jinja2", "OpenAI SDK"],
       links: [
         {
           type: "GitHub",
@@ -223,8 +247,8 @@ export const DATA = {
       dates: "Jul. 2026",
       active: true,
       description:
-        "Developed a production-ready Retrieval-Augmented Generation (RAG) platform that analyzes GitHub repositories by indexing README files into Redis vector search and enabling AI-powered conversations with source-grounded responses. Engineered an optimized embedding pipeline using Google Gemini REST API with SHA-based caching, batch embedding, recursive text chunking, and cosine similarity search to reduce re-indexing latency and API overhead. Built scalable FastAPI APIs with PostgreSQL persistence, containerized the application using Docker, and optimized cloud deployment with background task processing and dynamic Redis index management.",
-      technologies: ["FastAPI", "Redis", "PostgreSQL", "React", "Gemini", "Docker"],
+        "Built a RAG app that indexes a user's top 15 GitHub READMEs into Redis vector search, so questions about any repository are answered from that repository's own text. Cut embedding cost with 1,500-character overlapping chunks, batched Gemini embedding calls (32 texts across 5 workers) and a 24-hour SHA cache that skips unchanged READMEs. FastAPI backend with PostgreSQL for accounts, OTP email sign-up and background indexing jobs.",
+      technologies: ["React", "FastAPI", "Redis", "PostgreSQL", "LangChain", "Groq", "Gemini"],
       links: [
         {
           type: "Website",
@@ -233,7 +257,7 @@ export const DATA = {
         },
         {
           type: "GitHub",
-          href: "https://github.com/mujeebmasi/RedisRAG",
+          href: "https://github.com/mujeebmasi/redis-rag",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -256,7 +280,7 @@ export const DATA = {
         },
         {
           type: "GitHub",
-          href: "https://github.com/mujeebmasi",
+          href: "https://github.com/mujeebmasi/conditional-rag-workflow",
           icon: <Icons.github className="size-3" />,
         },
       ],
