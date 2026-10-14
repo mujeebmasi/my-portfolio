@@ -206,35 +206,22 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Meet Translate - Live Multilingual Meetings",
-      href: "https://github.com/mujeebmasi/meeting-translate",
+      title: "Meet Translate - Speech-to-Speech Translated Video Calls",
+      href: "https://meet-translate.vercel.app/",
       dates: "Oct. 2026",
       active: true,
       description:
-        "Built a video-meeting app where participants speaking Hindi, Telugu, Tamil or Kannada are heard in English by everyone else, as live captions and a spoken English voice. Wired a speech-recognition service to a backend that translates each utterance in real time, and shows the original speech transliterated into English letters under every caption. Split the system into a frontend, a backend and a separate ASR service, and covered it with an automated test suite.",
-      technologies: ["Next.js", "NestJS", "Socket.IO", "WebRTC", "FastAPI", "PostgreSQL"],
+        "Built a video-call app where each person speaks Hindi, Telugu or English and hears the others translated into their own language, using real-time speech-to-speech models (Google Gemini Live Translate, OpenAI GPT-Realtime-2 and GPT-Realtime-Translate, chosen per meeting). Translation runs in the speaker's browser and the translated voice is swapped into the WebRTC call, with live captions relayed over Socket.IO. Compared all three models on real two-person calls and wrote an interpreter prompt that stopped GPT-Realtime-2 from answering questions instead of translating them. Deployed on Vercel and Render with a TURN relay for calls across different networks.",
+      technologies: ["Next.js", "NestJS", "Socket.IO", "WebRTC", "OpenAI Realtime", "Gemini Live"],
       links: [
         {
-          type: "GitHub",
-          href: "https://github.com/mujeebmasi/meeting-translate",
-          icon: <Icons.github className="size-3" />,
+          type: "Website",
+          href: "https://meet-translate.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
         },
-      ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "Voice Agent Eval Harness",
-      href: "https://github.com/mujeebmasi/voice-agent-eval-harness",
-      dates: "Sep. 2026",
-      active: true,
-      description:
-        "Built an evaluation harness that runs scripted adversarial conversations against a voice or chat support agent and scores it on escalation correctness, language fidelity and interruption handling. Reports escalation precision and recall instead of a single pass rate, so an agent that escalates everything cannot look good, and flags agents that silently switch back to English or answer a stale topic after the customer changes subject.",
-      technologies: ["Python", "FastAPI", "Pydantic", "Jinja2", "OpenAI SDK"],
-      links: [
         {
           type: "GitHub",
-          href: "https://github.com/mujeebmasi/voice-agent-eval-harness",
+          href: "https://github.com/mujeebmasi/meet-translate",
           icon: <Icons.github className="size-3" />,
         },
       ],
