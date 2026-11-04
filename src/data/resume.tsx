@@ -85,6 +85,7 @@ export const DATA = {
     { name: "Redis", icon: RedisLogo },
     { name: "RAG", icon: RagLogo },
     { name: "LangChain", icon: NlpLogo },
+    { name: "LangGraph" },
     { name: "LLMs", icon: LlmLogo },
     { name: "Docker", icon: Docker },
     { name: "Git", icon: GitLogo },
@@ -123,6 +124,18 @@ export const DATA = {
 
   work: [
     {
+      company: "WiseIn",
+      badges: [],
+      href: "https://wisein.in/",
+      location: "Remote",
+      title: "Software Engineering Intern",
+      logoUrl: "",
+      start: "Oct. 2026",
+      end: "Present",
+      description:
+        "Full-stack work on TapByWisein, WiseIn's live events and digital card platform (React, Express, Prisma, PostgreSQL). 21 pull requests merged to production: shipped a same-day hotfix when a merge broke the dashboard and events pages, made sign-in checks faster by verifying tokens on the server, fixed the CI build that was failing every PR, fixed the leaderboard, added registration questions to events, and added unit and component tests.",
+    },
+    {
       company: "Drytis",
       badges: [],
       href: "https://drytis.com/",
@@ -145,18 +158,6 @@ export const DATA = {
       end: "Sep. 2026",
       description:
         "Led initiatives on Salesforce Agentforce and enterprise AI workflows. Organized and conducted a hackathon with 300+ participants. Mentored 1000+ students in building automation workflows using Salesforce.",
-    },
-    {
-      company: "Skills4Future",
-      badges: [],
-      href: "https://www.aicte-india.org/",
-      location: "Virtual",
-      title: "Artificial Intelligence & Data Analytics Intern",
-      logoUrl: "/edunettt.png",
-      start: "Aug. 2025",
-      end: "Sep. 2025",
-      description:
-        "Completed a 4-week AI and Data Analytics internship focused on real-world sustainability datasets. Performed data preprocessing, data cleaning, and exploratory data analysis workflows.",
     },
   ],
   openSource: [
