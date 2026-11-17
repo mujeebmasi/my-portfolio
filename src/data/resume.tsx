@@ -129,7 +129,7 @@ export const DATA = {
       href: "https://wisein.in/",
       location: "Remote",
       title: "Software Engineering Intern",
-      logoUrl: "",
+      logoUrl: "/wisein.png",
       start: "Oct. 2026",
       end: "Present",
       description:
