@@ -65,6 +65,16 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <section id="work">
+        <div className="flex min-h-0 flex-col gap-y-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+            <h2 className="text-xl font-bold">Work Experience</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 9}>
+            <WorkSection />
+          </BlurFade>
+        </div>
+      </section>
       <section id="skills">
         <div className="flex min-h-0 flex-col gap-y-4">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -82,6 +92,11 @@ export default function Page() {
           </div>
         </div>
       </section>
+      <section id="projects">
+        <BlurFade delay={BLUR_FADE_DELAY * 8}>
+          <ProjectsSection />
+        </BlurFade>
+      </section>
       <section id="open-source">
         <div className="flex min-h-0 flex-col gap-y-6">
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
@@ -89,21 +104,6 @@ export default function Page() {
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <OpenSourceSection />
-          </BlurFade>
-        </div>
-      </section>
-      <section id="projects">
-        <BlurFade delay={BLUR_FADE_DELAY * 8}>
-          <ProjectsSection />
-        </BlurFade>
-      </section>
-      <section id="work">
-        <div className="flex min-h-0 flex-col gap-y-6">
-          <BlurFade delay={BLUR_FADE_DELAY * 8}>
-            <h2 className="text-xl font-bold">Work Experience</h2>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <WorkSection />
           </BlurFade>
         </div>
       </section>
