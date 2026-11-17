@@ -143,7 +143,7 @@ export const DATA = {
       title: "AI Computer Science Engineer (Contract)",
       logoUrl: "/drytis.png",
       start: "Aug. 2026",
-      end: "Present",
+      end: "Oct. 2026",
       description:
         "On-demand contract engineer on a remote coding-support platform, helping clients debug and complete features.",
     },
