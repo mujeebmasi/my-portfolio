@@ -128,12 +128,12 @@ export const DATA = {
       badges: [],
       href: "https://wisein.in/",
       location: "Remote",
-      title: "Software Engineering Intern",
+      title: "Fullstack AI Developer",
       logoUrl: "/wisein.png",
       start: "Oct. 2026",
       end: "Present",
       description:
-        "Full-stack work on TapByWisein, WiseIn's live events and digital card platform (React, Express, Prisma, PostgreSQL). 21 pull requests merged to production: shipped a same-day hotfix when a merge broke the dashboard and events pages, made sign-in checks faster by verifying tokens on the server, fixed the CI build that was failing every PR, fixed the leaderboard, added registration questions to events, and added unit and component tests.",
+        "Building TapByWisein, WiseIn's live events and digital card platform, across the full stack (React, Express, Prisma, PostgreSQL). Shipped 20+ changes to production, from faster sign-in and event registration questions to leaderboard fixes, CI repairs and test coverage.",
     },
     {
       company: "Drytis",
