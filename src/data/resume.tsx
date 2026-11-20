@@ -54,7 +54,7 @@ type HackathonEntry = {
 export const DATA = {
   name: "Shaikh Abdul Mujeeb Masi",
   initials: "SAMM",
-  url: "https://github.com/mujeebmasi",
+  url: "https://mujeebmasi.in",
   location: "Hyderabad, Telangana, India",
   locationLink: "https://www.google.com/maps/place/Hyderabad",
   description:
